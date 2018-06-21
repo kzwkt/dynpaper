@@ -9,7 +9,8 @@ import datetime
 import socket
 
 
-VERSION = '1.2.1'
+VERSION = '1.2.2'
+
 
 PROCESS_CALLS = {
     'gnome': "DISPLAY=:0 GSETTINGS_BACKEND=dconf /usr/bin/gsettings set org.gnome.desktop.background picture-uri file://{}",
@@ -208,10 +209,8 @@ def get_index(args):
 
 def set_wallpaper(args):
     index = get_index(args)
-    subprocess.Popen(PROCESS_CALLS[args.env].format(
+    subprocess.run(PROCESS_CALLS[args.env].format(
         args.file_template.format(index)), shell=True)
-
-    pass
 
 
 def acquire_lock():
