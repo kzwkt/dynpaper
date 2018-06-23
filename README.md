@@ -28,10 +28,13 @@ dynpaper  <arguments> &
 
 Currently supports:
 
-* Gnome (And derivatives, Budgie works, Unity should work but I did not test)
+* Gnome
+* Budgie
+* KDE
 * Nitrogen  
 * feh
 
+Gnome/Budgie derivatives should work as well.
 
 ## Installation
 
