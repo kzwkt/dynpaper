@@ -62,7 +62,7 @@ optional arguments:
                         for bash, ~/.zprofile for zsh etc.
   -r DAWN, --dawn DAWN  Dawn/sunrise time, ex. 06:23
   -d DUSK, --dusk DUSK  Dusk/sunset time, ex. 20:23
-  -e {gnome,budgie,nitrogen,feh}, --env {gnome,budgie,nitrogen,feh}
+  -e {gnome,kde,budgie,nitrogen,feh}, --env {gnome,kde,budgie,nitrogen,feh}
                         Your current desktop environment/wallpaper manager.
   -i INTERVAL, --interval INTERVAL
                         Refresh interval in minutes, default = 5.
