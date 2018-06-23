@@ -46,7 +46,7 @@ Download the MacOS Mojave wallpapers and extract them to any folder you'd like.
 ## Running
 ```
 usage: dynpaper [-h] [-a] [-f FILE_TEMPLATE] [-s SHELL_CONF] [-r DAWN]
-                [-d DUSK] -e {gnome,budgie,nitrogen,feh} [-i INTERVAL]
+                [-d DUSK] -e {gnome,budgie,nitrogen,feh,kde} [-i INTERVAL]
                 [-g FILE_RANGE]
 
 optional arguments:
