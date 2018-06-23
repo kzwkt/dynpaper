@@ -28,7 +28,7 @@ dynpaper  <arguments> &
 
 Currently supports:
 
-* Gnome  
+* Gnome (And derivatives, Budgie works, Unity should work but I did not test)
 * Nitrogen  
 * feh
 
