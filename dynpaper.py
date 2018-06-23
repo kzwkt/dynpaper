@@ -9,7 +9,7 @@ import datetime
 import socket
 
 
-VERSION = '1.2.3a'
+VERSION = '1.2.3b'
 
 
 PROCESS_CALLS = {
@@ -103,7 +103,7 @@ def err_wallpapers(args):
     for i in range(1, args.file_range[1]):
         file = args.file_template.format(i)
         if not os.path.isfile(file):
-            print('File:{} does not exist.'.format(file))
+            print('File:{} does not exist.'.format({'file':file}))
             exit(-1)
 
 
