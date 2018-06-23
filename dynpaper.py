@@ -9,7 +9,8 @@ import datetime
 import socket
 
 
-VERSION = '1.2.3d'
+
+VERSION = '1.3.0'
 
 
 PROCESS_CALLS = {
