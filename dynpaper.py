@@ -9,7 +9,7 @@ import datetime
 import socket
 
 
-VERSION = '1.2.3b'
+VERSION = '1.2.3d'
 
 
 PROCESS_CALLS = {
@@ -103,7 +103,7 @@ def err_wallpapers(args):
     for i in range(1, args.file_range[1]):
         file = args.file_template.format(i)
         if not os.path.isfile(file):
-            print('File:{} does not exist.'.format({'file':file}))
+            print('File:{} does not exist.'.format(file))
             exit(-1)
 
 
@@ -221,9 +221,8 @@ def get_index(args):
 
 def set_wallpaper(args):
     index = get_index(args)
-    subprocess.run(PROCESS_CALLS[args.env].format(
-        args.file_template.format(index)), shell=True)
-
+    subprocess.run(PROCESS_CALLS[args.env].format_map(
+        {'file':args.file_template.format(index)}), shell=True)
 
 def acquire_lock():
     __socket = socket.socket(
